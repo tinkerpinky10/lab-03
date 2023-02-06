@@ -34,10 +34,11 @@ def send_mail(recipient: str, sender: str, subject: str, body: str) -> bool:
 def get_inbox(recipient: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
 	gets the inbox of the recipient, and contains the following info: 
-	recipient
+	The JSON body of the request contains the following keys:
+	- recipient
 
 	Arguments:
-		recipient(str): the recipient of the mail
+		recipient(str): The recipient of the mail
 	Returns:
 		Nothing
     """
@@ -46,7 +47,9 @@ def get_inbox(recipient: str) -> None:
 
 def get_sent(sender: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
-	Receives what was sent 
+	Receives what was sent from the server. 
+	The JSON body of the request contains the following keys:
+	- sender
 
 	Arguments:
 		sender(str): the sender of the mail
@@ -59,10 +62,12 @@ def get_sent(sender: str) -> None:
 
 def get_mail(mail_id: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
-	Gets the mail from
+	Gets the mail from the server
+	The JSON body of the request contains the following keys:
+	- A mail id
 
 	Arguments: 
-		mail_id(str)
+		mail_id(str): the mail id we must get mail from
 
 	Returns:
 		Nothing
@@ -73,8 +78,11 @@ def get_mail(mail_id: str) -> None:
 def delete_mail(mail_id: str) -> None:
     """TODO: fill out this docstring (using the send_mail docstring as a guide)
 	Deletes the client's mail
+	JSON body of the request contains the following keys:
+	- mail id
+
 	Arguments:
-		mail_id(str)
+		mail_id(str): the mail id we must delete mail from
 	Returns:
 		Nothing
     """
