@@ -13,6 +13,7 @@ RESTful APIs are scalable because client-server interactions are optimized by RE
 
 *Question 2: According to the definition of “resources” provided in the AWS article above,
 What are the resources the mail server is providing to clients?*
+
 The resources the mail server is providing to clients consist of the following: list of dictionaries representing mail entries, saves the path of file of the mail, lets the client know whether the mail has been deleted, and gets the user’s sent email information. 
 
 *Question 3: What is one common REST Method not used in our mail server? How could
